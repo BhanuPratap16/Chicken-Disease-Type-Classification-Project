@@ -22,7 +22,8 @@ list_of_files= [
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "research/trials.ipynb"
+    "research/trials.ipynb",
+    "templates/index.html"
     
 ]## We need this during deployment of our project, here we ll be writing all CI/CD commands
 
