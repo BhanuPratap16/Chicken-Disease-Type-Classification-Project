@@ -2,12 +2,16 @@ from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.data_ingestion import DataIngestion
 from cnnClassifier import logger
 from cnnClassifier.components.prepare_base_model import PrepareBaseModel
-from cnnClassifier.components.prepare_call_backs import PrepareCallback
+from cnnClassifier.components.prepare_callbacks import PrepareCallback
 from cnnClassifier.components.training import Training
 
 
 STAGE_NAME = "Training stage"
 
+import sys
+import io
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 
 class ModelTrainingPipeline:
